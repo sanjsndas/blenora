@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies Policy — Blenora Built Vision</title>
+  <meta name="description" content="Cookies policy for Blenora Built Vision. Learn how we use cookies and similar tracking technologies on our site.">
+  <meta name="author" content="Blenora Built Vision Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://blenorabuiltvision.com/cookies.html">
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --ink-light: #4a4a4a;
+      --ink-faint: #6b6b6b;
+      --paper: #fcfbf9;
+      --paper-warm: #f5f2ee;
+      --rule: #e0dcd6;
+      --rule-dark: #c8c2ba;
+      --accent: #8b6f4c;
+      --accent-deep: #5c4a32;
+      --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      --measure: 68ch;
+      --radius: 2px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.04);
+    }
+
+    html {
+      font-size: 18px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--serif);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--accent-deep);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: clamp(1.15rem, 2vw, 1.4rem);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: var(--sans);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--ink-light);
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      max-width: var(--measure);
+    }
+
+    /* ===== LAYOUT ===== */
+    .site-wrapper {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(252, 251, 249, 0.95);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0;
+      gap: 2rem;
+    }
+
+    .site-brand {
+      flex-shrink: 0;
+    }
+
+    .site-brand a {
+      display: flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .site-brand .brand-mark {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent-deep);
+      line-height: 1;
+    }
+
+    .site-brand .brand-name {
+      font-weight: 400;
+    }
+
+    .site-brand .brand-sub {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--ink-faint);
+      display: block;
+      margin-top: -2px;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 0.15rem;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--ink-light);
+      padding: 0.4rem 0.75rem;
+      border-radius: 2px;
+      transition: all 0.15s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      background: var(--paper-warm);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--rule-dark);
+      color: var(--ink-light);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: all 0.15s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent-deep);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 0.25rem;
+    }
+
+    /* ===== SEARCH BAR ===== */
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.2rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .search-bar.open {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      font-family: var(--serif);
+      font-size: 1rem;
+      border: 1px solid var(--rule-dark);
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 2px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-bar input::placeholder {
+      color: var(--ink-faint);
+      font-style: italic;
+    }
+
+    /* ===== PAGE HERO ===== */
+    .page-hero {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    .page-hero .category-tag {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .page-hero h1 {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      max-width: 22ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .page-hero .hero-sub {
+      font-size: 1.05rem;
+      color: var(--ink-light);
+      max-width: 52ch;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* ===== LEGAL CONTENT ===== */
+    .legal-content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 0 2rem;
+    }
+
+    .legal-content .last-updated {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-faint);
+      margin-bottom: 2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .legal-content h2 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    .legal-content h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    .legal-content h3 {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-faint);
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .legal-content p,
+    .legal-content li {
+      font-size: 0.98rem;
+      color: var(--ink-light);
+      line-height: 1.8;
+      max-width: var(--measure);
+    }
+
+    .legal-content ul,
+    .legal-content ol {
+      margin-bottom: 1.2rem;
+      padding-left: 1.5rem;
+      max-width: var(--measure);
+    }
+
+    .legal-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .legal-content .highlight-box {
+      background: var(--paper-warm);
+      border-left: 3px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: var(--radius);
+    }
+
+    .legal-content .highlight-box p {
+      font-size: 0.92rem;
+      margin-bottom: 0;
+      color: var(--ink-light);
+    }
+
+    .legal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .legal-content th {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-faint);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 2px solid var(--rule-dark);
+      background: var(--paper);
+    }
+
+    .legal-content td {
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--rule);
+      color: var(--ink-light);
+      vertical-align: top;
+    }
+
+    .legal-content tr:last-child td {
+      border-bottom: none;
+    }
+
+    .legal-content .contact-block {
+      background: var(--paper-warm);
+      border: 1px solid var(--rule);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      margin-top: 2rem;
+    }
+
+    .legal-content .contact-block p {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .legal-content .contact-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      border-top: 2px solid var(--ink);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      max-width: 35ch;
+    }
+
+    .footer-column h4 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-faint);
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-column a {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+    }
+
+    .footer-column a:hover {
+      color: var(--accent-deep);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+      margin: 0;
+    }
+
+    .footer-bottom nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-bottom nav a {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .legal-content {
+        padding: 2.5rem 0 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        font-size: 16px;
+      }
+
+      .header-inner {
+        flex-wrap: wrap;
+      }
+
+      .main-nav {
+        order: 3;
+        width: 100%;
+        display: none;
+      }
+
+      .main-nav.open {
+        display: block;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      .main-nav a {
+        display: block;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-bottom nav {
+        justify-content: center;
+      }
+
+      .page-hero {
+        padding: 2.5rem 0 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .site-wrapper {
+        padding: 0 1rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .legal-content table {
+        font-size: 0.8rem;
+      }
+
+      .legal-content th,
+      .legal-content td {
+        padding: 0.5rem;
+      }
+    }
+
+    /* ===== UTILITY ===== */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-wrapper">
+      <div class="header-inner">
+        <div class="site-brand">
+          <a href="index.html" aria-label="Blenora Built Vision home">
+            <span class="brand-mark">B</span>
+            <span>
+              <span class="brand-name">Blenora</span>
+              <span class="brand-sub">Built Vision</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html" class="active">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+        </div>
+      </div>
+
+      <div class="search-bar" id="searchBar">
+        <input type="search" id="searchInput" placeholder="Search articles by title, topic, or keyword…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Cookies policy introduction">
+      <div class="site-wrapper">
+        <span class="category-tag">Legal</span>
+        <h1>Cookies Policy</h1>
+        <p class="hero-sub">This policy explains how Blenora Built Vision uses cookies and similar technologies, and how you can control them.</p>
+      </div>
+    </section>
+
+    <!-- COOKIES CONTENT -->
+    <div class="site-wrapper">
+      <article class="legal-content">
+
+        <p class="last-updated">Last updated: 15 January 2026</p>
+
+        <p>Blenora Built Vision ("we", "us", "our") operates the website at <a href="https://blenorabuiltvision.com">blenorabuiltvision.com</a> (the "Site"). This Cookies Policy explains what cookies are, how we use them, and the choices you have regarding their use.</p>
+
+        <p>By continuing to browse or use the Site, you agree to our use of cookies as described in this policy. If you do not agree, you should adjust your browser settings or refrain from using the Site.</p>
+
+        <div class="highlight-box">
+          <p><strong>In short:</strong> We use a small number of cookies to keep the Site working and to understand which articles our readers find useful. We do not use cookies to serve you targeted advertising, and we do not sell your data.</p>
+        </div>
+
+        <h2>1. What Are Cookies?</h2>
+
+        <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the site owners.</p>
+
+        <p>Cookies can be "persistent" (they remain on your device until they expire or you delete them) or "session" cookies (they are deleted when you close your browser). They can also be "first-party" (set by the website you are visiting) or "third-party" (set by a different domain).</p>
+
+        <p>In addition to cookies, we may use similar technologies such as web beacons, pixels, and local storage. This policy covers all such technologies.</p>
+
+        <h2>2. How We Use Cookies</h2>
+
+        <p>We use cookies for the following purposes:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Purpose</th>
+              <th>Examples</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Essential</strong></td>
+              <td>Required for the Site to function properly. These cannot be disabled.</td>
+              <td>Cookie consent preference, security tokens</td>
+            </tr>
+            <tr>
+              <td><strong>Analytics</strong></td>
+              <td>Help us understand how visitors interact with the Site by collecting anonymised usage data.</td>
+              <td>Page views, time on page, referral source</td>
+            </tr>
+            <tr>
+              <td><strong>Functional</strong></td>
+              <td>Remember your preferences and improve your experience.</td>
+              <td>Language preference, search history (if applicable)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>We do <strong>not</strong> use advertising or tracking cookies to serve you targeted ads, and we do not share cookie data with advertising networks.</p>
+
+        <h2>3. Specific Cookies We Use</h2>
+
+        <p>The table below lists the specific cookies that may be set when you visit the Site. Note that third-party cookies are subject to the respective third party's privacy policies.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Duration</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>cookie_consent</code></td>
+              <td>Essential</td>
+              <td>1 year</td>
+              <td>Stores your cookie preferences</td>
+            </tr>
+            <tr>
+              <td><code>_ga</code></td>
+              <td>Analytics</td>
+              <td>2 years</td>
+              <td>Used to distinguish unique users (anonymised IP)</td>
+            </tr>
+            <tr>
+              <td><code>_gid</code></td>
+              <td>Analytics</td>
+              <td>24 hours</td>
+              <td>Used to distinguish users (anonymised IP)</td>
+            </tr>
+            <tr>
+              <td><code>session_id</code></td>
+              <td>Essential</td>
+              <td>Session</td>
+              <td>Maintains your session state</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>We may update this list from time to time as we change the services we use. Please check back periodically for the latest information.</p>
+
+        <h2>4. Third-Party Cookies</h2>
+
+        <p>Some cookies are placed by third-party services that appear on our pages. We currently use:</p>
+
+        <ul>
+          <li><strong>Analytics provider:</strong> We use a privacy-respecting analytics service to understand how readers use the Site. The data collected is anonymised and aggregated. You can learn more in our <a href="privacy.html">Privacy Policy</a>.</li>
+          <li><strong>Newsletter platform:</strong> If you subscribe to our newsletter, our email service provider may set cookies when you interact with our sign-up form or emails.</li>
+        </ul>
+
+        <p>We do not control third-party cookies. You should review the respective privacy policies of these providers for more information.</p>
+
+        <h2>5. Your Cookie Choices</h2>
+
+        <h3>5.1 Browser settings</h3>
+        <p>Most web browsers allow you to control cookies through their settings. You can typically:</p>
+        <ul>
+          <li>View what cookies are stored and delete them individually</li>
+          <li>Block third-party cookies</li>
+          <li>Block cookies from specific sites</li>
+          <li>Block all cookies</li>
+          <li>Delete all cookies when you close your browser</li>
+        </ul>
+
+        <p>Please note that if you block or delete cookies, some parts of the Site may not function properly. For example, we may not be able to remember your cookie preferences.</p>
+
+        <h3>5.2 Browser-specific instructions</h3>
+        <p>For more information on how to manage cookies in your browser, please refer to:</p>
+        <ul>
+          <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+          <li><a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+          <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+          <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener">Microsoft Edge</a></li>
+        </ul>
+
+        <h3>5.3 Do Not Track</h3>
+        <p>Some browsers include a "Do Not Track" (DNT) feature. Because there is no industry consensus on how DNT should be interpreted, our Site does not currently respond to DNT signals. We do, however, minimise data collection and anonymise analytics data by default.</p>
+
+        <h2>6. Changes to This Cookies Policy</h2>
+
+        <p>We may update this Cookies Policy from time to time to reflect changes in technology, legislation, or our practices. When we do, we will revise the "Last updated" date at the top of this page.</p>
+
+        <p>We encourage you to review this page periodically to stay informed about how we use cookies.</p>
+
+        <h2>7. Contact Us</h2>
+
+        <div class="contact-block">
+          <p>If you have any questions or concerns about this Cookies Policy or our use of cookies, please contact us:</p>
+          <p><strong>Email:</strong> <a href="mailto:privacy@blenorabuiltvision.com">privacy@blenorabuiltvision.com</a></p>
+          <p><strong>General enquiries:</strong> <a href="mailto:hello@blenorabuiltvision.com">hello@blenorabuiltvision.com</a></p>
+          <p><strong>Postal address:</strong><br>Blenora Built Vision — Editorial<br>Privacy Office<br>Bengaluru, India</p>
+        </div>
+
+      </article>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Blenora Built Vision</h3>
+          <p>An independent editorial publication on interior design, architecture, and the built environment. Published weekly.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Lighting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Blenora Built Vision. All rights reserved.</p>
+        <nav aria-label="Footer legal links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // ===== SEARCH TOGGLE =====
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+          searchInput.focus();
+        }
+      });
+
+      // ===== MOBILE MENU =====
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mainNav = document.getElementById('mainNav');
+
+      mobileMenuBtn.addEventListener('click', function() {
+        mainNav.classList.toggle('open');
+      });
+
+      // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Close mobile menu if open
+            mainNav.classList.remove('open');
+          }
+        });
+      });
+
+      // ===== NAV ACTIVE STATE =====
+      const navLinks = document.querySelectorAll('.main-nav a');
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          navLinks.forEach(function(l) { l.classList.remove('active'); });
+          this.classList.add('active');
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>

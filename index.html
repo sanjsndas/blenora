@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blenora Built Vision | Interior Design & Architecture Journal</title>
+  <meta name="description" content="In-depth articles, guides, and critical perspectives on residential architecture, interior design, space planning, materials, lighting, and sustainable building.">
+  <meta name="author" content="Blenora Built Vision Editorial">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blenora Built Vision | Interior Design & Architecture Journal">
+  <meta property="og:description" content="In-depth articles, guides, and critical perspectives on residential architecture, interior design, space planning, materials, lighting, and sustainable building.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blenorabuiltvision.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta property="og:site_name" content="Blenora Built Vision">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blenora Built Vision | Interior Design & Architecture Journal">
+  <meta name="twitter:description" content="In-depth articles, guides, and critical perspectives on residential architecture, interior design, space planning, materials, lighting, and sustainable building.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://blenorabuiltvision.com/">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blenora Built Vision",
+    "description": "In-depth articles, guides, and critical perspectives on residential architecture, interior design, space planning, materials, lighting, and sustainable building.",
+    "url": "https://blenorabuiltvision.com/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Blenora Built Vision",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://blenorabuiltvision.com/logo.png"
+      }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Article",
+            "headline": "The Poetics of Space: How Modern Homes Are Learning to Breathe Again",
+            "author": {"@type": "Person", "name": "Elena Marchetti"},
+            "datePublished": "2026-01-15",
+            "articleSection": "Architecture"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Article",
+            "headline": "Material Honesty: Why Brick, Concrete, and Timber Are Defining Contemporary Interiors",
+            "author": {"@type": "Person", "name": "Marcus Chen"},
+            "datePublished": "2026-02-03",
+            "articleSection": "Materials"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --ink-light: #4a4a4a;
+      --ink-faint: #6b6b6b;
+      --paper: #fcfbf9;
+      --paper-warm: #f5f2ee;
+      --rule: #e0dcd6;
+      --rule-dark: #c8c2ba;
+      --accent: #8b6f4c;
+      --accent-deep: #5c4a32;
+      --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      --measure: 68ch;
+      --measure-narrow: 52ch;
+      --radius: 2px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.04);
+    }
+
+    html {
+      font-size: 18px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--serif);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--accent-deep);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: clamp(1.15rem, 2vw, 1.4rem);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: var(--sans);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--ink-light);
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      max-width: var(--measure);
+    }
+
+    .article-body p:first-of-type {
+      font-size: 1.15rem;
+      color: var(--ink-light);
+      line-height: 1.8;
+    }
+
+    /* ===== LAYOUT ===== */
+    .site-wrapper {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(252, 251, 249, 0.95);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0;
+      gap: 2rem;
+    }
+
+    .site-brand {
+      flex-shrink: 0;
+    }
+
+    .site-brand a {
+      display: flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .site-brand .brand-mark {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent-deep);
+      line-height: 1;
+    }
+
+    .site-brand .brand-name {
+      font-weight: 400;
+    }
+
+    .site-brand .brand-sub {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--ink-faint);
+      display: block;
+      margin-top: -2px;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 0.15rem;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--ink-light);
+      padding: 0.4rem 0.75rem;
+      border-radius: 2px;
+      transition: all 0.15s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      background: var(--paper-warm);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--rule-dark);
+      color: var(--ink-light);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: all 0.15s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent-deep);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 0.25rem;
+    }
+
+    /* ===== SEARCH BAR ===== */
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.2rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .search-bar.open {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      font-family: var(--serif);
+      font-size: 1rem;
+      border: 1px solid var(--rule-dark);
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 2px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-bar input::placeholder {
+      color: var(--ink-faint);
+      font-style: italic;
+    }
+
+    /* ===== HERO / FEATURED ===== */
+    .featured-section {
+      padding: 2.5rem 0 1rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .featured-main {
+      position: relative;
+    }
+
+    .featured-main img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      margin-bottom: 1.2rem;
+    }
+
+    .featured-main .category-tag {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .featured-main h2 {
+      margin-top: 0.4rem;
+      margin-bottom: 0.6rem;
+      font-size: clamp(1.5rem, 2.8vw, 2rem);
+      line-height: 1.2;
+    }
+
+    .featured-main h2 a {
+      color: var(--ink);
+    }
+
+    .featured-main h2 a:hover {
+      color: var(--accent-deep);
+    }
+
+    .featured-main .meta {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      color: var(--ink-faint);
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .featured-side {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .featured-side-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .featured-side-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: var(--radius);
+    }
+
+    .featured-side-item .category-tag {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .featured-side-item h3 {
+      font-size: 0.95rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      line-height: 1.35;
+      font-weight: 500;
+    }
+
+    .featured-side-item h3 a {
+      color: var(--ink);
+    }
+
+    .featured-side-item .meta {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      color: var(--ink-faint);
+    }
+
+    /* ===== MAIN CONTENT AREA ===== */
+    .content-area {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3.5rem;
+      padding: 2.5rem 0 3rem;
+    }
+
+    /* ===== ARTICLE CARDS ===== */
+    .article-stream h2 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 1.5rem;
+      margin-top: 0;
+    }
+
+    .article-card {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 1.8rem;
+      padding: 1.8rem 0;
+      border-bottom: 1px solid var(--rule);
+      align-items: start;
+    }
+
+    .article-card:first-of-type {
+      padding-top: 0;
+    }
+
+    .article-card-image {
+      order: 2;
+    }
+
+    .article-card-image img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: var(--radius);
+    }
+
+    .article-card-content {
+      order: 1;
+    }
+
+    .article-card .category-tag {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .article-card h3 {
+      margin-top: 0.35rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      line-height: 1.3;
+      font-weight: 500;
+    }
+
+    .article-card h3 a {
+      color: var(--ink);
+    }
+
+    .article-card h3 a:hover {
+      color: var(--accent-deep);
+    }
+
+    .article-card .excerpt {
+      font-size: 0.92rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      margin-bottom: 0.6rem;
+      max-width: 55ch;
+    }
+
+    .article-card .meta {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .article-card .meta .reading-time {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      position: sticky;
+      top: 5rem;
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+    }
+
+    .sidebar-widget {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      background: var(--paper);
+    }
+
+    .sidebar-widget h4 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .sidebar-widget ul {
+      list-style: none;
+    }
+
+    .sidebar-widget li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+
+    .sidebar-widget li:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-widget li a {
+      color: var(--ink);
+    }
+
+    .sidebar-widget li a:hover {
+      color: var(--accent-deep);
+    }
+
+    .sidebar-widget .post-count {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      color: var(--ink-faint);
+      float: right;
+    }
+
+    .editorial-note {
+      background: var(--paper-warm);
+      border: 1px solid var(--rule);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: var(--ink-light);
+      font-style: italic;
+    }
+
+    .editorial-note .attribution {
+      font-family: var(--sans);
+      font-style: normal;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-faint);
+      margin-top: 0.75rem;
+      display: block;
+    }
+
+    /* ===== CATEGORY FILTER ===== */
+    .category-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .category-filter button {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.45rem 0.9rem;
+      border: 1px solid var(--rule-dark);
+      background: transparent;
+      color: var(--ink-light);
+      border-radius: 2rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .category-filter button:hover {
+      border-color: var(--accent);
+      color: var(--accent-deep);
+    }
+
+    .category-filter button.active {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--paper);
+    }
+
+    /* ===== FULL ARTICLE ===== */
+    .full-article {
+      padding: 3rem 0;
+      border-top: 1px solid var(--rule);
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .full-article .article-header {
+      margin-bottom: 2rem;
+    }
+
+    .full-article .article-header .category-tag {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .full-article .article-header h1 {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      max-width: 25ch;
+    }
+
+    .full-article .article-header .byline {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      color: var(--ink-faint);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .full-article .article-header .byline strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .full-article .article-body {
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .full-article .article-body h2 {
+      font-size: 1.6rem;
+      margin-top: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    .full-article .article-body h3 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .full-article .article-body blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--ink-light);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .full-article .article-body ul,
+    .full-article .article-body ol {
+      margin: 1.2rem 0;
+      padding-left: 1.8rem;
+      max-width: var(--measure);
+    }
+
+    .full-article .article-body li {
+      margin-bottom: 0.5rem;
+    }
+
+    .full-article .article-body img {
+      margin: 2rem 0;
+      border-radius: var(--radius);
+    }
+
+    .full-article .article-body .img-caption {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      margin-top: -1.5rem;
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    .related-articles {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--ink);
+    }
+
+    .related-articles h3 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      margin-top: 0;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--rule);
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .faq-section h2 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.2rem 0;
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      text-align: left;
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: color 0.15s;
+    }
+
+    .faq-question:hover {
+      color: var(--accent-deep);
+    }
+
+    .faq-question .faq-icon {
+      font-size: 1.2rem;
+      color: var(--ink-faint);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    .faq-question.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .faq-answer.open {
+      max-height: 500px;
+      padding-bottom: 1.5rem;
+    }
+
+    .faq-answer p {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      max-width: var(--measure);
+    }
+
+    /* ===== NEWSLETTER ===== */
+    .newsletter-section {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 3.5rem 2rem;
+      margin: 3rem 0;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+
+    .newsletter-section h2 {
+      color: var(--paper);
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    .newsletter-section p {
+      color: rgba(252, 251, 249, 0.7);
+      max-width: 45ch;
+      margin: 0 auto 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      font-family: var(--serif);
+      font-size: 0.9rem;
+      border: 1px solid rgba(252, 251, 249, 0.2);
+      background: rgba(252, 251, 249, 0.08);
+      color: var(--paper);
+      border-radius: 2px;
+      outline: none;
+    }
+
+    .newsletter-form input::placeholder {
+      color: rgba(252, 251, 249, 0.4);
+    }
+
+    .newsletter-form input:focus {
+      border-color: var(--accent);
+    }
+
+    .newsletter-form button {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: var(--paper);
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+
+    .newsletter-form button:hover {
+      background: var(--accent-deep);
+    }
+
+    .newsletter-note {
+      font-size: 0.72rem;
+      color: rgba(252, 251, 249, 0.4);
+      margin-top: 0.75rem;
+    }
+
+    /* ===== ABOUT / CONTACT / PRIVACY / TERMS / COOKIE ===== */
+    .info-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--rule);
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .info-section h2 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-section p,
+    .info-section li {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      line-height: 1.75;
+    }
+
+    .info-section ul {
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .info-section li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      border-top: 2px solid var(--ink);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      max-width: 35ch;
+    }
+
+    .footer-column h4 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-faint);
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-column a {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+    }
+
+    .footer-column a:hover {
+      color: var(--accent-deep);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+      margin: 0;
+    }
+
+    .footer-bottom nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-bottom nav a {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .content-area {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+      .featured-main img {
+        height: 260px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        font-size: 16px;
+      }
+
+      .header-inner {
+        flex-wrap: wrap;
+      }
+
+      .main-nav {
+        order: 3;
+        width: 100%;
+        display: none;
+      }
+
+      .main-nav.open {
+        display: block;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      .main-nav a {
+        display: block;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .featured-main img {
+        height: 200px;
+      }
+
+      .article-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .article-card-image {
+        order: 1;
+      }
+
+      .article-card-content {
+        order: 2;
+      }
+
+      .article-card-image img {
+        height: 180px;
+      }
+
+      .sidebar {
+        grid-template-columns: 1fr;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+      }
+
+      .newsletter-form button {
+        width: 100%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-bottom nav {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .site-wrapper {
+        padding: 0 1rem;
+      }
+
+      .featured-side-item {
+        grid-template-columns: 60px 1fr;
+        gap: 0.75rem;
+      }
+
+      .featured-side-item img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ===== UTILITY ===== */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    .no-results {
+      padding: 2rem 0;
+      color: var(--ink-faint);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    .article-card[data-hidden="true"] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-wrapper">
+      <div class="header-inner">
+        <div class="site-brand">
+          <a href="#" aria-label="Blenora Built Vision home">
+            <span class="brand-mark">B</span>
+            <span>
+              <span class="brand-name">Blenora</span>
+              <span class="brand-sub">Built Vision</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <ul>
+         <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+        </div>
+      </div>
+
+      <div class="search-bar" id="searchBar">
+        <input type="search" id="searchInput" placeholder="Search articles by title, topic, or keyword…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- FEATURED SECTION -->
+    <section class="featured-section" aria-label="Featured articles">
+      <div class="site-wrapper">
+        <div class="featured-grid">
+          <article class="featured-main">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=500&fit=crop" alt="Contemporary living space with floor-to-ceiling windows overlooking a garden, natural light flooding across polished concrete floors">
+            <span class="category-tag">Architecture</span>
+            <h2><a href="#article-poetics">The Poetics of Space: How Modern Homes Are Learning to Breathe Again</a></h2>
+            <p style="font-size:0.95rem;color:var(--ink-light);max-width:55ch;">After decades of sealed envelopes and climate-controlled interiors, a new generation of architects is rediscovering the fundamental pleasure of air movement, natural light, and the sensory richness of a home that responds to its environment.</p>
+            <div class="meta">
+              <span>Elena Marchetti</span>
+              <span>February 14, 2026</span>
+              <span>12 min read</span>
+            </div>
+          </article>
+
+          <div class="featured-side">
+            <article class="featured-side-item">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=200&h=200&fit=crop" alt="Warm wooden shelving unit with ceramic vessels and soft indirect lighting in a minimalist kitchen">
+              <div>
+                <span class="category-tag">Interior Design</span>
+                <h3><a href="#">The Quiet Kitchen: Why Restraint Is the New Luxury</a></h3>
+                <span class="meta">Marcus Chen · 9 min</span>
+              </div>
+            </article>
+
+            <article class="featured-side-item">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=200&h=200&fit=crop" alt="Exposed concrete wall with a single vertical window casting dramatic shadows across the interior surface">
+              <div>
+                <span class="category-tag">Materials</span>
+                <h3><a href="#">Concrete Without Compromise: Texture, Weight, and Light</a></h3>
+                <span class="meta">Priya Sharma · 11 min</span>
+              </div>
+            </article>
+
+            <article class="featured-side-item">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=200&h=200&fit=crop" alt="Small apartment interior with a bed, desk, and dining table arranged efficiently within limited square footage">
+              <div>
+                <span class="category-tag">Small Spaces</span>
+                <h3><a href="#">The 40-Square-Metre Home That Feels Like a Loft</a></h3>
+                <span class="meta">David Okonkwo · 8 min</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT AREA -->
+    <div class="site-wrapper">
+      <div class="content-area">
+
+        <!-- ARTICLE STREAM -->
+        <div class="article-stream" id="articleStream">
+          <h2>Latest Articles</h2>
+
+          <div class="category-filter" id="categoryFilter" role="group" aria-label="Filter by category">
+            <button class="active" data-category="all">All</button>
+            <button data-category="interior-design">Interior Design</button>
+            <button data-category="architecture">Architecture</button>
+            <button data-category="materials">Materials</button>
+            <button data-category="space-planning">Space Planning</button>
+            <button data-category="lighting">Lighting</button>
+            <button data-category="furniture">Furniture</button>
+            <button data-category="small-spaces">Small Spaces</button>
+            <button data-category="sustainability">Sustainability</button>
+            <button data-category="modern-homes">Modern Homes</button>
+          </div>
+
+          <!-- Article 1 -->
+          <article class="article-card" data-category="interior-design" data-title="the quiet kitchen why restraint is the new luxury">
+            <div class="article-card-content">
+              <span class="category-tag">Interior Design</span>
+              <h3><a href="#">The Quiet Kitchen: Why Restraint Is the New Luxury</a></h3>
+              <p class="excerpt">The most compelling kitchens today are not the largest or the most expensive. They are the ones that know exactly what they are — and nothing more. From handleless cabinetry to honed stone surfaces, we explore the quiet confidence of kitchens designed with an editor's eye.</p>
+              <div class="meta">
+                <span>Marcus Chen</span>
+                <span>February 10, 2026</span>
+                <span class="reading-time">9 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=440&h=300&fit=crop" alt="Minimalist kitchen with warm oak cabinetry, handleless doors, and a honed stone countertop under soft pendant lighting">
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="article-card" data-category="architecture" data-title="the poetics of space how modern homes are learning to breathe again">
+            <div class="article-card-content">
+              <span class="category-tag">Architecture</span>
+              <h3><a href="#">The Poetics of Space: How Modern Homes Are Learning to Breathe Again</a></h3>
+              <p class="excerpt">After decades of sealed envelopes and climate-controlled interiors, a new generation of architects is rediscovering the fundamental pleasure of air movement, natural light, and the sensory richness of a home that responds to its environment.</p>
+              <div class="meta">
+                <span>Elena Marchetti</span>
+                <span>February 14, 2026</span>
+                <span class="reading-time">12 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=440&h=300&fit=crop" alt="Contemporary living space with floor-to-ceiling windows overlooking a garden, natural light flooding across polished concrete floors">
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="article-card" data-category="materials" data-title="concrete without compromise texture weight and light">
+            <div class="article-card-content">
+              <span class="category-tag">Materials</span>
+              <h3><a href="#">Concrete Without Compromise: Texture, Weight, and Light</a></h3>
+              <p class="excerpt">Concrete has been called brutal, cold, and unyielding. But when handled with sensitivity, it becomes one of the most versatile and emotionally resonant materials in the architect's palette. A deep dive into the craft of exposed concrete.</p>
+              <div class="meta">
+                <span>Priya Sharma</span>
+                <span>February 8, 2026</span>
+                <span class="reading-time">11 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=440&h=300&fit=crop" alt="Exposed concrete wall with a single vertical window casting dramatic shadows across the interior surface">
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="article-card" data-category="small-spaces" data-title="the 40-square-metre home that feels like a loft">
+            <div class="article-card-content">
+              <span class="category-tag">Small Spaces</span>
+              <h3><a href="#">The 40-Square-Metre Home That Feels Like a Loft</a></h3>
+              <p class="excerpt">A studio apartment in Lisbon demonstrates how strategic sightlines, a restrained material palette, and one bold spatial gesture can transform a cramped footprint into a home that feels generous and calm.</p>
+              <div class="meta">
+                <span>David Okonkwo</span>
+                <span>February 5, 2026</span>
+                <span class="reading-time">8 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=440&h=300&fit=crop" alt="Small apartment interior with a bed, desk, and dining table arranged efficiently within limited square footage">
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="article-card" data-category="lighting" data-title="the architecture of light designing with shadow as material">
+            <div class="article-card-content">
+              <span class="category-tag">Lighting</span>
+              <h3><a href="#">The Architecture of Light: Designing with Shadow as Material</a></h3>
+              <p class="excerpt">Light is not a decorative afterthought. In the best buildings, it is the primary material — one that shifts, softens, and reveals the geometry of space throughout the day. Here is how architects design with light rather than around it.</p>
+              <div class="meta">
+                <span>Elena Marchetti</span>
+                <span>February 2, 2026</span>
+                <span class="reading-time">10 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=440&h=300&fit=crop" alt="Sunlight streaming through a large window onto a textured concrete wall, creating sharp geometric shadow patterns">
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="article-card" data-category="space-planning" data-title="the end of the open plan what comes after the great room">
+            <div class="article-card-content">
+              <span class="category-tag">Space Planning</span>
+              <h3><a href="#">The End of the Open Plan? What Comes After the Great Room</a></h3>
+              <p class="excerpt">For thirty years, the open plan was the default. But a growing chorus of architects and homeowners is rediscovering the value of enclosure, acoustic separation, and rooms that know their purpose.</p>
+              <div class="meta">
+                <span>Marcus Chen</span>
+                <span>January 28, 2026</span>
+                <span class="reading-time">9 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=440&h=300&fit=crop" alt="Interior view showing a partial wall separating a dining area from a living space, creating both connection and privacy">
+            </div>
+          </article>
+
+          <!-- Article 7 -->
+          <article class="article-card" data-category="sustainability" data-title="passive design is not a trend it is the future of comfort">
+            <div class="article-card-content">
+              <span class="category-tag">Sustainability</span>
+              <h3><a href="#">Passive Design Is Not a Trend. It Is the Future of Comfort.</a></h3>
+              <p class="excerpt">Orientation, thermal mass, cross-ventilation, shading — the principles of passive design are ancient, free, and remarkably effective. As energy costs rise, they are also becoming the most practical form of luxury.</p>
+              <div class="meta">
+                <span>Priya Sharma</span>
+                <span>January 25, 2026</span>
+                <span class="reading-time">10 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=440&h=300&fit=crop" alt="House with deep roof overhangs and large windows designed for passive solar shading and natural ventilation">
+            </div>
+          </article>
+
+          <!-- Article 8 -->
+          <article class="article-card" data-category="furniture" data-title="furniture as architecture built-ins that transform a room">
+            <div class="article-card-content">
+              <span class="category-tag">Furniture</span>
+              <h3><a href="#">Furniture as Architecture: Built-Ins That Transform a Room</a></h3>
+              <p class="excerpt">When furniture becomes part of the structure, the room changes. Built-in seating, integrated storage, and joinery that dissolves into the walls can solve spatial problems while adding an unmistakable sense of permanence and craft.</p>
+              <div class="meta">
+                <span>David Okonkwo</span>
+                <span>January 22, 2026</span>
+                <span class="reading-time">7 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=440&h=300&fit=crop" alt="Custom built-in oak shelving and window seat that spans an entire wall of a living room">
+            </div>
+          </article>
+
+          <!-- Article 9 -->
+          <article class="article-card" data-category="modern-homes" data-title="the new suburban house density privacy and the return of the courtyard">
+            <div class="article-card-content">
+              <span class="category-tag">Modern Homes</span>
+              <h3><a href="#">The New Suburban House: Density, Privacy, and the Return of the Courtyard</a></h3>
+              <p class="excerpt">As suburban plots shrink and privacy becomes paramount, the courtyard house — an ancient typology — is reemerging as the most elegant solution. We look at three contemporary examples that turn inward without feeling closed off.</p>
+              <div class="meta">
+                <span>Elena Marchetti</span>
+                <span>January 18, 2026</span>
+                <span class="reading-time">11 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=440&h=300&fit=crop" alt="Contemporary courtyard house with a central planted void and glazed walls overlooking the outdoor space">
+            </div>
+          </article>
+
+          <!-- Article 10 -->
+          <article class="article-card" data-category="interior-design" data-title="the color of calm how muted palettes change the way a room feels">
+            <div class="article-card-content">
+              <span class="category-tag">Interior Design</span>
+              <h3><a href="#">The Color of Calm: How Muted Palettes Change the Way a Room Feels</a></h3>
+              <p class="excerpt">Color is not decoration. It is atmosphere, temperature, and mood. A considered palette of warm greys, soft ochres, and deep earth tones can make a room feel grounded in a way that no single furniture piece ever could.</p>
+              <div class="meta">
+                <span>Priya Sharma</span>
+                <span>January 15, 2026</span>
+                <span class="reading-time">8 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=440&h=300&fit=crop" alt="Living room painted in a warm muted terracotta tone with natural linen upholstery and soft daylight">
+            </div>
+          </article>
+
+          <!-- Article 11 -->
+          <article class="article-card" data-category="architecture" data-title="brick as a modern language lessons from studio vdga">
+            <div class="article-card-content">
+              <span class="category-tag">Architecture</span>
+              <h3><a href="#">Brick as a Modern Language: Lessons from Studio VDGA</a></h3>
+              <p class="excerpt">The Brick House in Pune demonstrates how a traditional material, handled with contemporary rigor, can address climate, privacy, and beauty simultaneously. A study in restraint, shadow, and the intelligence of the vernacular.</p>
+              <div class="meta">
+                <span>Marcus Chen</span>
+                <span>January 10, 2026</span>
+                <span class="reading-time">13 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=440&h=300&fit=crop" alt="Brick house with intricate jaali screens creating filtered light and shadow patterns across the facade">
+            </div>
+          </article>
+
+          <!-- Article 12 -->
+          <article class="article-card" data-category="materials" data-title="the sensory home tactility as the antidote to the digital world">
+            <div class="article-card-content">
+              <span class="category-tag">Materials</span>
+              <h3><a href="#">The Sensory Home: Tactility as the Antidote to the Digital World</a></h3>
+              <p class="excerpt">Lime plaster, raw timber, unlacquered brass, hand-thrown ceramics — the materials that age and change and invite touch are becoming the defining feature of homes designed as sanctuaries rather than showpieces.</p>
+              <div class="meta">
+                <span>David Okonkwo</span>
+                <span>January 6, 2026</span>
+                <span class="reading-time">9 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=440&h=300&fit=crop" alt="Close-up of textured lime plaster wall with warm natural light grazing the surface, revealing subtle variations">
+            </div>
+          </article>
+
+          <!-- Article 13 -->
+          <article class="article-card" data-category="space-planning" data-title="circulation the invisible architecture of how we move through rooms">
+            <div class="article-card-content">
+              <span class="category-tag">Space Planning</span>
+              <h3><a href="#">Circulation: The Invisible Architecture of How We Move Through Rooms</a></h3>
+              <p class="excerpt">You rarely notice good circulation. You always notice bad circulation. The placement of doors, the width of hallways, the sequence of spaces — these are the decisions that determine whether a home feels effortless or exhausting.</p>
+              <div class="meta">
+                <span>Elena Marchetti</span>
+                <span>January 3, 2026</span>
+                <span class="reading-time">10 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=440&h=300&fit=crop" alt="Open hallway with a clear sightline through to a living space, lit by a skylight above">
+            </div>
+          </article>
+
+          <!-- Article 14 -->
+          <article class="article-card" data-category="interior-design" data-title="bedroom design the most personal room in the house">
+            <div class="article-card-content">
+              <span class="category-tag">Interior Design</span>
+              <h3><a href="#">Bedroom Design: The Most Personal Room in the House</a></h3>
+              <p class="excerpt">The bedroom is where design meets physiology. Light, temperature, acoustics, and material softness all converge to determine whether we rest or merely sleep. A practical guide to designing for genuine recovery.</p>
+              <div class="meta">
+                <span>Priya Sharma</span>
+                <span>December 28, 2025</span>
+                <span class="reading-time">9 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=440&h=300&fit=crop" alt="Serene bedroom with soft linen bedding, blackout curtains partially drawn, and warm ambient lighting">
+            </div>
+          </article>
+
+          <!-- Article 15 -->
+          <article class="article-card" data-category="architecture" data-title="the facade as filter perforation porosity and climate">
+            <div class="article-card-content">
+              <span class="category-tag">Architecture</span>
+              <h3><a href="#">The Façade as Filter: Perforation, Porosity, and Climate</a></h3>
+              <p class="excerpt">From mashrabiya to weathering steel shutters, the screen is one of architecture's oldest and most adaptable inventions. A look at how contemporary architects are using perforated façades to control light, heat, and privacy.</p>
+              <div class="meta">
+                <span>Marcus Chen</span>
+                <span>December 22, 2025</span>
+                <span class="reading-time">12 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=440&h=300&fit=crop" alt="Perforated weathered steel facade with light filtering through circular openings onto an interior wall">
+            </div>
+          </article>
+
+          <!-- Article 16 -->
+          <article class="article-card" data-category="lighting" data-title="artificial light done right layering temperature and restraint">
+            <div class="article-card-content">
+              <span class="category-tag">Lighting</span>
+              <h3><a href="#">Artificial Light Done Right: Layering, Temperature, and Restraint</a></h3>
+              <p class="excerpt">Most homes are over-lit and under-designed. The solution is not more fixtures but fewer, better ones — placed with intention and controlled in layers. A practical guide to lighting a home like an editor, not an electrician.</p>
+              <div class="meta">
+                <span>David Okonkwo</span>
+                <span>December 18, 2025</span>
+                <span class="reading-time">8 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=440&h=300&fit=crop" alt="Living room at dusk illuminated by a mix of warm table lamps, wall sconces, and a single floor lamp">
+            </div>
+          </article>
+
+          <!-- Article 17 -->
+          <article class="article-card" data-category="sustainability" data-title="adaptive reuse why the greenest building is the one already standing">
+            <div class="article-card-content">
+              <span class="category-tag">Sustainability</span>
+              <h3><a href="#">Adaptive Reuse: Why the Greenest Building Is the One Already Standing</a></h3>
+              <p class="excerpt">Demolition is the most carbon-intensive decision an architect can make. The growing movement toward adaptive reuse — converting warehouses, offices, and factories into homes — is both a climate strategy and a creative opportunity.</p>
+              <div class="meta">
+                <span>Priya Sharma</span>
+                <span>December 14, 2025</span>
+                <span class="reading-time">11 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=440&h=300&fit=crop" alt="Loft apartment in a converted industrial building with exposed steel columns and large factory windows">
+            </div>
+          </article>
+
+          <!-- Article 18 -->
+          <article class="article-card" data-category="modern-homes" data-title="the house without corridors rethinking domestic circulation">
+            <div class="article-card-content">
+              <span class="category-tag">Modern Homes</span>
+              <h3><a href="#">The House Without Corridors: Rethinking Domestic Circulation</a></h3>
+              <p class="excerpt">Corridors waste space. They are also boring. A growing number of architects are eliminating them entirely, replacing dead circulation with rooms that flow into one another — and in the process, gaining usable area and spatial richness.</p>
+              <div class="meta">
+                <span>Elena Marchetti</span>
+                <span>December 10, 2025</span>
+                <span class="reading-time">9 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=440&h=300&fit=crop" alt="Living space that flows directly into a kitchen and dining area without a hallway or corridor between them">
+            </div>
+          </article>
+
+          <!-- Article 19 -->
+          <article class="article-card" data-category="furniture" data-title="the case for fewer better things editing your home like a magazine">
+            <div class="article-card-content">
+              <span class="category-tag">Furniture</span>
+              <h3><a href="#">The Case for Fewer, Better Things: Editing Your Home Like a Magazine</a></h3>
+              <p class="excerpt">The most beautiful homes are not the most full. They are the most edited. A conversation about restraint, provenance, and why one well-made chair is worth more than five mediocre ones — both aesthetically and environmentally.</p>
+              <div class="meta">
+                <span>Marcus Chen</span>
+                <span>December 6, 2025</span>
+                <span class="reading-time">7 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=440&h=300&fit=crop" alt="Sparsely furnished living room with a single sculptural armchair, a side table, and a large window">
+            </div>
+          </article>
+
+          <!-- Article 20 -->
+          <article class="article-card" data-category="space-planning" data-title="ceiling height and proportion the forgotten dimensions">
+            <div class="article-card-content">
+              <span class="category-tag">Space Planning</span>
+              <h3><a href="#">Ceiling Height and Proportion: The Forgotten Dimensions</a></h3>
+              <p class="excerpt">We obsess over square footage and ignore cubic volume. Yet ceiling height and the proportion of a room's three dimensions are what we actually feel. A study of why some rooms feel generous at 40 square metres and others feel cramped at 80.</p>
+              <div class="meta">
+                <span>Priya Sharma</span>
+                <span>December 2, 2025</span>
+                <span class="reading-time">10 min read</span>
+              </div>
+            </div>
+            <div class="article-card-image">
+              <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=440&h=300&fit=crop" alt="Double-height living space with tall windows and a mezzanine level overlooking the main room">
+            </div>
+          </article>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" aria-label="Sidebar">
+
+          <div class="sidebar-widget">
+            <h4>Popular This Month</h4>
+            <ul>
+              <li><a href="#">The Poetics of Space: How Modern Homes Are Learning to Breathe Again</a> <span class="post-count">1.2k</span></li>
+              <li><a href="#">The Quiet Kitchen: Why Restraint Is the New Luxury</a> <span class="post-count">980</span></li>
+              <li><a href="#">Brick as a Modern Language: Lessons from Studio VDGA</a> <span class="post-count">870</span></li>
+              <li><a href="#">The End of the Open Plan? What Comes After the Great Room</a> <span class="post-count">760</span></li>
+              <li><a href="#">Passive Design Is Not a Trend. It Is the Future of Comfort.</a> <span class="post-count">690</span></li>
+            </ul>
+          </div>
+
+          <div class="editorial-note">
+            <p>“We believe the best design writing does not celebrate buildings. It helps you understand them. Every article we publish begins with a question: what can a reader learn from this space that they can carry into their own?”</p>
+            <span class="attribution">— Blenora Built Vision Editorial Charter</span>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4>Browse by Topic</h4>
+            <ul>
+              <li><a href="#">Interior Design</a> <span class="post-count">24</span></li>
+              <li><a href="#">Architecture</a> <span class="post-count">31</span></li>
+              <li><a href="#">Materials</a> <span class="post-count">18</span></li>
+              <li><a href="#">Space Planning</a> <span class="post-count">15</span></li>
+              <li><a href="#">Lighting</a> <span class="post-count">12</span></li>
+              <li><a href="#">Furniture</a> <span class="post-count">9</span></li>
+              <li><a href="#">Small Spaces</a> <span class="post-count">14</span></li>
+              <li><a href="#">Sustainability</a> <span class="post-count">17</span></li>
+              <li><a href="#">Modern Homes</a> <span class="post-count">22</span></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4>Editor's Picks</h4>
+            <ul>
+              <li><a href="#">The Architecture of Light: Designing with Shadow as Material</a></li>
+              <li><a href="#">The Sensory Home: Tactility as the Antidote to the Digital World</a></li>
+              <li><a href="#">Adaptive Reuse: Why the Greenest Building Is the One Already Standing</a></li>
+              <li><a href="#">Ceiling Height and Proportion: The Forgotten Dimensions</a></li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- FULL ARTICLE: THE POETICS OF SPACE -->
+    <section class="full-article" id="article-poetics" aria-label="Featured long-form article">
+      <div class="site-wrapper">
+        <article>
+          <header class="article-header">
+            <span class="category-tag">Architecture</span>
+            <h1>The Poetics of Space: How Modern Homes Are Learning to Breathe Again</h1>
+            <div class="byline">
+              <span>By <strong>Elena Marchetti</strong></span>
+              <span>February 14, 2026</span>
+              <span>12 min read</span>
+            </div>
+          </header>
+
+          <div class="article-body">
+            <p>For the better part of three decades, the dominant narrative in residential architecture has been one of control. Sealed envelopes. Mechanical ventilation. Artificial light calibrated to mimic the sun. The home as a fortress against the environment — a sealed box where temperature, humidity, and illumination are held in a state of perpetual equilibrium by systems hidden behind plasterboard.</p>
+
+            <p>This approach has produced buildings of remarkable technical performance. It has also produced homes that, for all their efficiency, often feel strangely lifeless. You can sense it the moment you step inside: the absence of air movement, the flatness of light, the faint hum of machinery working against nature rather than with it.</p>
+
+            <p>But something is shifting. In studios from Melbourne to Mexico City, a new generation of architects is rediscovering what their predecessors knew intuitively: that a home should breathe. That air should move. That light should change. That the boundary between inside and outside should be negotiated rather than enforced.</p>
+
+            <h2>The Courtyard as Lung</h2>
+
+            <p>Consider the Brick House in Pune, designed by Studio VDGA, which we covered in depth earlier this year [citation:9]. Occupying a compact footprint in one of the city's densest neighbourhoods, the house could have been a sealed refuge. Instead, the architects turned it inward, carving a series of micro-courtyards through its four levels that function as light wells and thermal buffers.</p>
+
+            <p>These voids are not decorative. They facilitate cross-ventilation, encourage stack-effect cooling, and bring a rhythmic flow of natural light deep into the interior. In summer, brick jaali screens filter harsh sunlight, reducing heat gain. In winter, they allow gentle warming. The home breathes through its skin.</p>
+
+            <p>“With views often blocked in the city, looking inward made more sense,” the architects explain. “By turning inward, the home cultivates a serene and controlled internal environment — an urban oasis where one experiences the tactile richness of materials, the serenity of filtered light, and the gentle breeze moving through porous surfaces.”</p>
+
+            <p>What is striking about this approach is not its novelty — courtyard houses have existed for millennia — but its recovery. The passive strategies that were once born of necessity are now being deployed as deliberate design choices, not because the technology is unavailable, but because the results are simply better.</p>
+
+            <h2>The Façade as Filter</h2>
+
+            <p>On Jumeirah Bay Island in Dubai, a villa designed by SAOTA takes a different approach to the same problem [citation:13]. Here, the challenge is not privacy but solar gain — the intense, unrelenting sun of the Gulf. The architects responded with a façade of perforated screens, some made from glass-reinforced polymer, others from weathered copper, that create layers of dappled pattern both inside and out.</p>
+
+            <p>“Eaves and deep overhangs provide shade to the southern and northern façades, while screens on the east and west exposures offer protection from low-angle sun,” explains principal architect Philip Olmesdahl. “Large windows are deeply recessed or shaded by external screens, which significantly cuts solar gain and glare. In addition, the home's spatial planning promotes natural airflow throughout, reducing reliance on mechanical cooling.”</p>
+
+            <p>The result is a home that remains cool without being sealed. Air moves. Light is filtered rather than blocked. The interior feels connected to the landscape even as it is protected from it. The screens, inspired by traditional mashrabiya, are both functional and poetic — they animate walls and ceilings with shadow play that changes throughout the day.</p>
+
+            <p>“We prioritised the control and quality of light — a crucial element in a climate like Dubai's,” Olmesdahl adds. “The screens animate walls and ceilings with shadow play, contributing to a dynamic, immersive living experience.”</p>
+
+            <h2>Operable Envelopes</h2>
+
+            <p>Perhaps the most literal expression of this breathing architecture is the House of Iron Doors in Tbilisi, designed by TIMM Architecture [citation:18]. Here, the entire street-facing façade is given over to a set of large, perforated weathered steel shutters that can be opened or closed according to the season, the time of day, or the mood of the occupants.</p>
+
+            <p>“When the doors are fully opened, the house behaves almost like a pavilion where interior and exterior merge into a continuous living environment,” the studio explains. “The spatial atmosphere changes depending on the position of the façade panels: when closed, the house feels protective and introspective; when opened, it becomes transparent and outward-looking.”</p>
+
+            <p>This operability — the ability of the building to change its relationship with the environment — is a profound shift from the static envelopes of conventional construction. It returns agency to the occupant, allowing them to tune their home to the conditions of the moment rather than relying on systems to maintain a constant state.</p>
+
+            <blockquote>“The most sustainable building is not the one with the most efficient mechanical systems. It is the one that needs the fewest.”</blockquote>
+
+            <h2>Why This Matters Now</h2>
+
+            <p>The return to breathing architecture is not merely aesthetic. It is practical, economic, and environmental. As energy costs rise and the climate becomes more volatile, the case for passive design grows stronger with every passing season [citation:8]. Buildings that rely on mechanical systems to maintain comfort are vulnerable to power outages, equipment failure, and the escalating cost of energy. Buildings that breathe are resilient.</p>
+
+            <p>There is also a growing body of evidence linking natural ventilation, daylight, and material tactility to occupant well-being. The sealed, mechanically conditioned interior — for all its precision — has been associated with sick building syndrome, diminished cognitive performance, and a vague but persistent sense of disconnection from the natural world. The breathing home offers a corrective.</p>
+
+            <p>“The most defining ‘trend' of 2026 will be timelessness: spaces designed to remain relevant as society evolves,” says Sneha Divias, founder of Sneha Divias Atelier in Dubai [citation:17]. “Sustainability will be a baseline expectation. Circularity, sourcing transparency and ethical production will increasingly influence client decisions.”</p>
+
+            <p>And indeed, the breathing home is nothing if not timeless. It draws on principles that predate the mechanical age by centuries. It requires no exotic technology. It asks only that we pay attention — to orientation, to climate, to the movement of air and light. It asks that we design with the environment rather than against it.</p>
+
+            <p>That, in the end, may be the most radical proposition of all.</p>
+          </div>
+
+          <!-- Related Articles -->
+          <div class="related-articles">
+            <h3>Related Reading</h3>
+            <div class="featured-side" style="gap:1.2rem;">
+              <article class="featured-side-item">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=160&h=160&fit=crop" alt="Exposed concrete wall with dramatic shadow patterns from a vertical window">
+                <div>
+                  <span class="category-tag">Materials</span>
+                  <h3><a href="#">Concrete Without Compromise: Texture, Weight, and Light</a></h3>
+                  <span class="meta">Priya Sharma · 11 min read</span>
+                </div>
+              </article>
+              <article class="featured-side-item">
+                <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=160&h=160&fit=crop" alt="Sunlight streaming through a window onto a textured interior wall">
+                <div>
+                  <span class="category-tag">Lighting</span>
+                  <h3><a href="#">The Architecture of Light: Designing with Shadow as Material</a></h3>
+                  <span class="meta">Elena Marchetti · 10 min read</span>
+                </div>
+              </article>
+              <article class="featured-side-item">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=160&h=160&fit=crop" alt="House with deep roof overhangs designed for passive solar shading">
+                <div>
+                  <span class="category-tag">Sustainability</span>
+                  <h3><a href="#">Passive Design Is Not a Trend. It Is the Future of Comfort.</a></h3>
+                  <span class="meta">Priya Sharma · 10 min read</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section" id="faq" aria-label="Frequently asked questions">
+      <div class="site-wrapper">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the difference between interior design and interior architecture?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Interior design typically focuses on the aesthetic and functional arrangement of a space — furniture, finishes, color, and lighting. Interior architecture goes further, involving the manipulation of structural elements: moving walls, altering floor levels, and reconfiguring the spatial envelope itself. In practice, the two disciplines overlap significantly, and many designers work across both.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How do I choose the right lighting for a small apartment?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Layer your lighting rather than relying on a single overhead source. Use a combination of ambient light (a ceiling fixture or floor lamp), task lighting (a desk or reading lamp), and accent lighting (a small wall sconce or picture light). Warm color temperatures — 2700K to 3000K — tend to make small spaces feel cozier and more expansive than cool white light. Dimmers are essential for adapting the atmosphere throughout the day.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is an open-plan layout always the best choice?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No. While open plans can make small spaces feel larger and promote social connection, they can also feel acoustically harsh and functionally diffuse. Many architects and designers are now returning to partial enclosure — using half-walls, built-in storage, or level changes to create distinct zones without sealing them off completely. The right answer depends on how you actually live.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What materials are most sustainable for interior renovations?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Reclaimed and salvaged materials are almost always the most sustainable choice. When new materials are necessary, look for locally sourced timber with FSC certification, lime-based plasters and paints, natural stone with low embodied carbon, and recycled or rapidly renewable content in textiles and insulation. Avoid materials with high embodied carbon (virgin aluminum, virgin plastics) and those with questionable off-gassing profiles.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How can I make a small room feel larger without structural changes?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Maximize natural light, minimize visual clutter, and use a restrained color palette. Consider furniture that serves multiple purposes — a bed with integrated storage, a dining table that folds against the wall. Mirrors can amplify light and create a sense of depth, but use them strategically rather than reflexively. Scale matters more than you might think: furniture that is slightly larger than you expect often feels more comfortable than a collection of small pieces.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is passive design, and can it work in a renovation?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Passive design uses the building's form, orientation, and materials to maintain comfort without relying on mechanical systems. Key strategies include thermal mass, cross-ventilation, strategic shading, and high-performance glazing. In renovations, the options are more limited than in new construction, but there is still much that can be done: adding exterior shading, improving insulation, and opening up cross-ventilation paths are all effective. Even small interventions can significantly reduce cooling loads.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section" id="newsletter" aria-label="Newsletter signup">
+      <div class="site-wrapper">
+        <h2>The Blenora Dispatch</h2>
+        <p>A weekly letter with our best writing on architecture, interiors, and the ideas shaping the built environment. No noise. No spam. Just the good stuff.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you. You are now subscribed to The Blenora Dispatch.'); this.reset();">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter-note">We publish once a week. Unsubscribe anytime.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT / CONTACT / PRIVACY / TERMS / COOKIE -->
+    <section class="info-section" id="about">
+      <div class="site-wrapper">
+        <h2>About Blenora Built Vision</h2>
+        <p>Blenora Built Vision is an independent editorial publication devoted to interior design and architecture. We publish long-form articles, practical guides, and critical perspectives on the built environment — not as a catalogue of pretty pictures, but as a resource for people who want to understand how buildings work and why they matter.</p>
+        <p>Our writers are architects, designers, and journalists who believe that good design writing should be accessible without being simplistic, rigorous without being academic, and beautiful without being precious. We are reader-supported and editorially independent.</p>
+      </div>
+    </section>
+
+    <section class="info-section" id="contact">
+      <div class="site-wrapper">
+        <h2>Contact</h2>
+        <p>We welcome correspondence from readers, designers, and architects. For editorial enquiries, story pitches, or feedback, write to us at <a href="mailto:editorial@blenorabuiltvision.com">editorial@blenorabuiltvision.com</a>. We read every message, though we cannot always respond individually.</p>
+        <p>For advertising and partnership opportunities, please contact <a href="mailto:partnerships@blenorabuiltvision.com">partnerships@blenorabuiltvision.com</a>.</p>
+      </div>
+    </section>
+
+    <section class="info-section" id="privacy">
+      <div class="site-wrapper">
+        <h2>Privacy Policy</h2>
+        <p>Blenora Built Vision respects your privacy. We collect only the information you voluntarily provide — typically an email address for our newsletter — and we use it solely to deliver the content you have requested. We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
+        <p>We use minimal analytics to understand which articles are useful to our readers. This data is aggregated and anonymized. We do not track individual users across the web.</p>
+      </div>
+    </section>
+
+    <section class="info-section" id="terms">
+      <div class="site-wrapper">
+        <h2>Terms of Use</h2>
+        <p>All content published on Blenora Built Vision — articles, images, and design — is protected by copyright. You may quote briefly with attribution and a link to the original article. Reproduction of full articles or substantial portions thereof requires written permission.</p>
+        <p>The information on this site is provided for general educational purposes and does not constitute professional architectural, engineering, or design advice. Consult a qualified professional for guidance specific to your project.</p>
+      </div>
+    </section>
+
+    <section class="info-section" id="cookie">
+      <div class="site-wrapper">
+        <h2>Cookie Policy</h2>
+        <p>Blenora Built Vision uses a minimal number of cookies to remember your preferences and to understand how readers navigate the site. We do not use cookies for advertising or cross-site tracking. You can disable cookies in your browser settings without affecting your ability to read our articles.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Blenora Built Vision</h3>
+          <p>An independent editorial publication on interior design, architecture, and the built environment. Published weekly.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Lighting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+            <li><a href="#cookie">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Blenora Built Vision. All rights reserved.</p>
+        <nav aria-label="Footer legal links">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+          <a href="#cookie">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // ===== SEARCH TOGGLE =====
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+          searchInput.focus();
+        }
+      });
+
+      // ===== SEARCH FUNCTIONALITY =====
+      searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        const cards = document.querySelectorAll('.article-card');
+        let visibleCount = 0;
+
+        cards.forEach(function(card) {
+          const title = card.getAttribute('data-title') || '';
+          const excerpt = card.querySelector('.excerpt') ? card.querySelector('.excerpt').textContent.toLowerCase() : '';
+          const category = card.getAttribute('data-category') || '';
+
+          if (query === '' || title.includes(query) || excerpt.includes(query) || category.includes(query)) {
+            card.setAttribute('data-hidden', 'false');
+            visibleCount++;
+          } else {
+            card.setAttribute('data-hidden', 'true');
+          }
+        });
+
+        // Show/hide no results message
+        let noResults = document.getElementById('noResults');
+        if (!noResults) {
+          noResults = document.createElement('p');
+          noResults.id = 'noResults';
+          noResults.className = 'no-results';
+          noResults.textContent = 'No articles match your search. Try a different term.';
+          document.getElementById('articleStream').appendChild(noResults);
+        }
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      });
+
+      // ===== CATEGORY FILTER =====
+      const filterButtons = document.querySelectorAll('#categoryFilter button');
+      const articleCards = document.querySelectorAll('.article-card');
+
+      filterButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          filterButtons.forEach(function(b) { b.classList.remove('active'); });
+          this.classList.add('active');
+
+          const category = this.getAttribute('data-category');
+          let visibleCount = 0;
+
+          articleCards.forEach(function(card) {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.setAttribute('data-hidden', 'false');
+              visibleCount++;
+            } else {
+              card.setAttribute('data-hidden', 'true');
+            }
+          });
+
+          // Reset search
+          searchInput.value = '';
+
+          let noResults = document.getElementById('noResults');
+          if (noResults) {
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+          }
+        });
+      });
+
+      // ===== MOBILE MENU =====
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mainNav = document.getElementById('mainNav');
+
+      mobileMenuBtn.addEventListener('click', function() {
+        mainNav.classList.toggle('open');
+      });
+
+      // ===== FAQ ACCORDION =====
+      const faqQuestions = document.querySelectorAll('.faq-question');
+
+      faqQuestions.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          const isOpen = answer.classList.contains('open');
+
+          // Close all others
+          faqQuestions.forEach(function(otherBtn) {
+            if (otherBtn !== btn) {
+              otherBtn.classList.remove('open');
+              otherBtn.setAttribute('aria-expanded', 'false');
+              otherBtn.nextElementSibling.classList.remove('open');
+            }
+          });
+
+          // Toggle current
+          this.classList.toggle('open');
+          this.setAttribute('aria-expanded', !isOpen);
+          answer.classList.toggle('open');
+        });
+      });
+
+      // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Close mobile menu if open
+            mainNav.classList.remove('open');
+          }
+        });
+      });
+
+      // ===== NAV ACTIVE STATE =====
+      const navLinks = document.querySelectorAll('.main-nav a');
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          navLinks.forEach(function(l) { l.classList.remove('active'); });
+          this.classList.add('active');
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>

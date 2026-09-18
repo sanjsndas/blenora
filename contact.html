@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Blenora Built Vision</title>
+  <meta name="description" content="Get in touch with Blenora Built Vision. Editorial enquiries, story pitches, advertising, and partnerships.">
+  <meta name="author" content="Blenora Built Vision Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://blenorabuiltvision.com/contact.html">
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --ink-light: #4a4a4a;
+      --ink-faint: #6b6b6b;
+      --paper: #fcfbf9;
+      --paper-warm: #f5f2ee;
+      --rule: #e0dcd6;
+      --rule-dark: #c8c2ba;
+      --accent: #8b6f4c;
+      --accent-deep: #5c4a32;
+      --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      --measure: 68ch;
+      --radius: 2px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.04);
+    }
+
+    html {
+      font-size: 18px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--serif);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--accent-deep);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: clamp(1.15rem, 2vw, 1.4rem);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: var(--sans);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--ink-light);
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      max-width: var(--measure);
+    }
+
+    /* ===== LAYOUT ===== */
+    .site-wrapper {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(252, 251, 249, 0.95);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0;
+      gap: 2rem;
+    }
+
+    .site-brand {
+      flex-shrink: 0;
+    }
+
+    .site-brand a {
+      display: flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .site-brand .brand-mark {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent-deep);
+      line-height: 1;
+    }
+
+    .site-brand .brand-name {
+      font-weight: 400;
+    }
+
+    .site-brand .brand-sub {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--ink-faint);
+      display: block;
+      margin-top: -2px;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 0.15rem;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--ink-light);
+      padding: 0.4rem 0.75rem;
+      border-radius: 2px;
+      transition: all 0.15s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      background: var(--paper-warm);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--rule-dark);
+      color: var(--ink-light);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: all 0.15s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent-deep);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 0.25rem;
+    }
+
+    /* ===== SEARCH BAR ===== */
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.2rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .search-bar.open {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      font-family: var(--serif);
+      font-size: 1rem;
+      border: 1px solid var(--rule-dark);
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 2px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-bar input::placeholder {
+      color: var(--ink-faint);
+      font-style: italic;
+    }
+
+    /* ===== PAGE HERO ===== */
+    .page-hero {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    .page-hero .category-tag {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .page-hero h1 {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      max-width: 22ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .page-hero .hero-sub {
+      font-size: 1.05rem;
+      color: var(--ink-light);
+      max-width: 52ch;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* ===== CONTACT GRID ===== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      padding: 3rem 0 3.5rem;
+    }
+
+    /* ===== CONTACT FORM ===== */
+    .contact-form-wrap h2 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .form-field label {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-faint);
+      font-weight: 500;
+    }
+
+    .form-field label .required {
+      color: var(--accent);
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      padding: 0.7rem 0.9rem;
+      border: 1px solid var(--rule-dark);
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: var(--radius);
+      outline: none;
+      transition: border-color 0.15s;
+      width: 100%;
+    }
+
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: var(--ink-faint);
+      font-style: italic;
+    }
+
+    .form-field textarea {
+      resize: vertical;
+      min-height: 140px;
+      line-height: 1.6;
+    }
+
+    .form-field select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.9rem center;
+      padding-right: 2.2rem;
+    }
+
+    .form-submit {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.85rem 2rem;
+      background: var(--ink);
+      color: var(--paper);
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.15s;
+      align-self: flex-start;
+      margin-top: 0.5rem;
+    }
+
+    .form-submit:hover {
+      background: var(--accent-deep);
+    }
+
+    .form-note {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+      margin-top: 0.25rem;
+      line-height: 1.5;
+    }
+
+    /* ===== CONTACT INFO SIDEBAR ===== */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .contact-info-card {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      background: var(--paper);
+    }
+
+    .contact-info-card h3 {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .contact-info-card p {
+      font-size: 0.92rem;
+      color: var(--ink-light);
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+      max-width: none;
+    }
+
+    .contact-info-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-info-card .info-label {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-info-card .info-value {
+      font-size: 0.95rem;
+      color: var(--ink);
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info-card .info-value:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-info-card .info-value a {
+      color: var(--accent-deep);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .contact-info-card .info-value a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .contact-info-card .response-time {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      color: var(--accent-deep);
+      background: var(--paper-warm);
+      padding: 0.6rem 0.8rem;
+      border-radius: var(--radius);
+      border-left: 3px solid var(--accent);
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .editorial-note {
+      background: var(--paper-warm);
+      border: 1px solid var(--rule);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: var(--ink-light);
+      font-style: italic;
+    }
+
+    .editorial-note .attribution {
+      font-family: var(--sans);
+      font-style: normal;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-faint);
+      margin-top: 0.75rem;
+      display: block;
+    }
+
+    /* ===== FAQ (reused pattern) ===== */
+    .faq-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--rule);
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .faq-section h2 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.2rem 0;
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      text-align: left;
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: color 0.15s;
+    }
+
+    .faq-question:hover {
+      color: var(--accent-deep);
+    }
+
+    .faq-question .faq-icon {
+      font-size: 1.2rem;
+      color: var(--ink-faint);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    .faq-question.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .faq-answer.open {
+      max-height: 500px;
+      padding-bottom: 1.5rem;
+    }
+
+    .faq-answer p {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      max-width: var(--measure);
+    }
+
+    /* ===== INFO SECTION (for about block) ===== */
+    .info-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--rule);
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .info-section h2 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink-faint);
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-section p,
+    .info-section li {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      line-height: 1.75;
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      border-top: 2px solid var(--ink);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      max-width: 35ch;
+    }
+
+    .footer-column h4 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-faint);
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-column a {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+    }
+
+    .footer-column a:hover {
+      color: var(--accent-deep);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+      margin: 0;
+    }
+
+    .footer-bottom nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-bottom nav a {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-faint);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        font-size: 16px;
+      }
+
+      .header-inner {
+        flex-wrap: wrap;
+      }
+
+      .main-nav {
+        order: 3;
+        width: 100%;
+        display: none;
+      }
+
+      .main-nav.open {
+        display: block;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      .main-nav a {
+        display: block;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-bottom nav {
+        justify-content: center;
+      }
+
+      .page-hero {
+        padding: 2.5rem 0 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .site-wrapper {
+        padding: 0 1rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-submit {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* ===== UTILITY ===== */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-wrapper">
+      <div class="header-inner">
+        <div class="site-brand">
+          <a href="index.html" aria-label="Blenora Built Vision home">
+            <span class="brand-mark">B</span>
+            <span>
+              <span class="brand-name">Blenora</span>
+              <span class="brand-sub">Built Vision</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+        </div>
+      </div>
+
+      <div class="search-bar" id="searchBar">
+        <input type="search" id="searchInput" placeholder="Search articles by title, topic, or keyword…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Contact introduction">
+      <div class="site-wrapper">
+        <span class="category-tag">Get in Touch</span>
+        <h1>We would love to hear from you.</h1>
+        <p class="hero-sub">Whether you have a story pitch, a question about our editorial process, or an interest in partnering with Blenora Built Vision, our inbox is open.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT GRID -->
+    <div class="site-wrapper">
+      <div class="contact-grid">
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-wrap">
+          <h2>Send a Message</h2>
+          <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Thank you. Your message has been sent. We will respond within 2–3 business days.'); this.reset();">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-field">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="editorial">Editorial enquiry / story pitch</option>
+                <option value="feedback">Reader feedback</option>
+                <option value="advertising">Advertising & partnerships</option>
+                <option value="press">Press & media</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">Send Message</button>
+            <p class="form-note">We read every message. Due to volume, we may not be able to respond individually to all enquiries, but we do appreciate your time.</p>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO SIDEBAR -->
+        <aside class="contact-info" aria-label="Contact information">
+
+          <div class="contact-info-card">
+            <h3>Editorial</h3>
+            <span class="info-label">Story pitches & editorial enquiries</span>
+            <span class="info-value"><a href="mailto:editorial@blenorabuiltvision.com">editorial@blenorabuiltvision.com</a></span>
+            <p>We welcome pitches for in-depth articles, case studies, and critical essays on residential architecture, interior design, and the built environment.</p>
+          </div>
+
+          <div class="contact-info-card">
+            <h3>Advertising & Partnerships</h3>
+            <span class="info-label">Collaborations & sponsored content</span>
+            <span class="info-value"><a href="mailto:partnerships@blenorabuiltvision.com">partnerships@blenorabuiltvision.com</a></span>
+            <p>For advertising, brand partnerships, and sponsored editorial opportunities, please reach out with a brief description of your proposal.</p>
+          </div>
+
+          <div class="contact-info-card">
+            <h3>General Enquiries</h3>
+            <span class="info-label">Everything else</span>
+            <span class="info-value"><a href="mailto:hello@blenorabuiltvision.com">hello@blenorabuiltvision.com</a></span>
+            <div class="response-time">We typically respond within 2–3 business days. For urgent matters, please indicate "Urgent" in your subject line.</div>
+          </div>
+
+          <div class="editorial-note">
+            <p>“We believe the best design writing does not celebrate buildings. It helps you understand them. Every article we publish begins with a question: what can a reader learn from this space that they can carry into their own?”</p>
+            <span class="attribution">— Blenora Built Vision Editorial Charter</span>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section" id="faq" aria-label="Frequently asked questions">
+      <div class="site-wrapper">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How quickly do you respond to messages?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We aim to respond to all enquiries within 2–3 business days. Editorial pitches and partnership proposals may take slightly longer to review, as they are read by the relevant editor. If your matter is urgent, please mark it clearly in the subject line.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you accept guest articles or unsolicited pitches?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We welcome pitches from architects, designers, journalists, and knowledgeable writers. Please send a brief outline (200–300 words) describing your proposed article, along with a short note about your background and any relevant writing samples. We do not accept pre-written articles without a prior pitch.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How can I advertise on Blenora Built Vision?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We offer a limited number of sponsored placements and brand partnerships that align with our editorial values. We do not accept display advertising that compromises the reading experience or our editorial independence. For details, contact <a href="mailto:partnerships@blenorabuiltvision.com">partnerships@blenorabuiltvision.com</a>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I republish or syndicate your articles?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You may quote brief excerpts with attribution and a link back to the original article. Full republication or syndication requires written permission. Please contact <a href="mailto:editorial@blenorabuiltvision.com">editorial@blenorabuiltvision.com</a> with details of your request.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            I have a correction or update for a published article.
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We take accuracy seriously. If you believe an article contains an error or requires an update, please email <a href="mailto:editorial@blenorabuiltvision.com">editorial@blenorabuiltvision.com</a> with the article title, the specific issue, and any supporting information. We will review and, where appropriate, publish a correction.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you have an office I can visit?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Blenora Built Vision is an independent editorial publication with a distributed team. We do not maintain a public office. All correspondence is handled via email, and we are happy to arrange a call if needed. Please write to us first to schedule.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT BLOCK (reused for context) -->
+    <section class="info-section" id="about">
+      <div class="site-wrapper">
+        <h2>About Blenora Built Vision</h2>
+        <p>Blenora Built Vision is an independent editorial publication devoted to interior design and architecture. We publish long-form articles, practical guides, and critical perspectives on the built environment — not as a catalogue of pretty pictures, but as a resource for people who want to understand how buildings work and why they matter.</p>
+        <p>Our writers are architects, designers, and journalists who believe that good design writing should be accessible without being simplistic, rigorous without being academic, and beautiful without being precious. We are reader-supported and editorially independent.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Blenora Built Vision</h3>
+          <p>An independent editorial publication on interior design, architecture, and the built environment. Published weekly.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Lighting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Blenora Built Vision. All rights reserved.</p>
+        <nav aria-label="Footer legal links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // ===== SEARCH TOGGLE =====
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+          searchInput.focus();
+        }
+      });
+
+      // ===== MOBILE MENU =====
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mainNav = document.getElementById('mainNav');
+
+      mobileMenuBtn.addEventListener('click', function() {
+        mainNav.classList.toggle('open');
+      });
+
+      // ===== FAQ ACCORDION =====
+      const faqQuestions = document.querySelectorAll('.faq-question');
+
+      faqQuestions.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          const isOpen = answer.classList.contains('open');
+
+          // Close all others
+          faqQuestions.forEach(function(otherBtn) {
+            if (otherBtn !== btn) {
+              otherBtn.classList.remove('open');
+              otherBtn.setAttribute('aria-expanded', 'false');
+              otherBtn.nextElementSibling.classList.remove('open');
+            }
+          });
+
+          // Toggle current
+          this.classList.toggle('open');
+          this.setAttribute('aria-expanded', !isOpen);
+          answer.classList.toggle('open');
+        });
+      });
+
+      // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Close mobile menu if open
+            mainNav.classList.remove('open');
+          }
+        });
+      });
+
+      // ===== NAV ACTIVE STATE =====
+      const navLinks = document.querySelectorAll('.main-nav a');
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          navLinks.forEach(function(l) { l.classList.remove('active'); });
+          this.classList.add('active');
+        });
+      });
+
+      // ===== CONTACT FORM: pre-fill subject from URL (optional) =====
+      const urlParams = new URLSearchParams(window.location.search);
+      const subjectParam = urlParams.get('subject');
+      if (subjectParam) {
+        const select = document.getElementById('subject');
+        if (select) {
+          for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].value === subjectParam) {
+              select.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }
+
+    })();
+  </script>
+
+</body>
+</html>
